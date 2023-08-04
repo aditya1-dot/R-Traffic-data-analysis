@@ -14,6 +14,7 @@ suppressMessages(library(randomForest))
 # # Choose dplyr's filter() over stats' filter()
 # conflict_prefer("lag", "dplyr")
 # # Create a data frame with the given data
+
 data <- data.frame(
   Years = c(1970, 1980, 1990, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002,
             2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014,
@@ -43,7 +44,7 @@ data <- data.frame(
                       3809156, 3880651, 4016401, 4109592, 4471510, 4582439, 4676838,
                       4865394, 5231922, 5402486, 5472144, 5603293, NA)
 )
-
+# Cleaning Noise
 # Remove rows with missing values
 data <- na.omit(data)
 
